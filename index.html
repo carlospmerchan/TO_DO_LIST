@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODOlist_carlosPerez_lorenzoGomez</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css
+    ">
+    <link rel="stylesheet" href="https://use.typekit.net/ulq1qcs.css">
+
+</head>
+<body>
+
+    <!-- principal -->
+    <main>
+        <h1>Cosas que hacer antes de morise</h1>
+
+        <!-- Input de tareas -->
+        <form id="agregar" class="campo"  action="" method="POST">
+            <label class="etiqueta" for="tarea">tarea</label>
+            <input class="input_text" type="text" name="tarea" id="tarea" required maxlength="30">
+            <input type="submit" value="Añadir" class="btn_primary">
+        </form>
+
+        <!-- Listado -->
+        <ul id="tareasList" class="listado">
+            <li class="item">Escribir un libro<label><input type="checkbox" class="visar"></label><button class="btn eliminar">Eliminar</button></li>
+            <li class="item">Plantar un árbol<label><input type="checkbox" class="visar"></label><button class="btn eliminar">Eliminar</button></li>
+            <li class="item">Tener un hijo<label><input type="checkbox" class="visar"></label><button class="btn eliminar">Eliminar</button></li>
+        </ul>
+
+    <!-- java -->
+    <script src="app/main.js"></script>
+
+</body>
+</html>
