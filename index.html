@@ -18,17 +18,17 @@
 
         <!-- Input de tareas -->
         <form id="agregar" class="campo"  action="" method="POST">
-            <label class="item" for="tarea">tarea</label>
+            <label class="etiqueta" for="tarea">tarea</label>
             <input class="input_text" type="text" name="tarea" id="tarea" required maxlength="30">
-            <input class="item" type="submit" value="Añadir" class="btn_primary">
+            <input type="submit" value="Añadir" class="btn_primary">
         </form>
 
         <!-- Listado -->
         <ul id="tareasList" class="listado">
-            <li class="item">Escribir un libro<label><input type="checkbox" class="visar"></label><img class="delete" src="assets/images/trash_icon.svg" alt="trash icon"></li>
-            <li class="item">Plantar un árbol<label><input type="checkbox" class="visar"></label><img class="delete" src="assets/images/trash_icon.svg" alt="trash icon"></li>
-            <li class="item">Tener un hijo<label><input type="checkbox" class="visar"></label><img class="delete" src="assets/images/trash_icon.svg" alt="trash icon"></li>
-            <li class="item">Aprobar el LAB<label><input type="checkbox" class="visar"></label><img class="delete" src="assets/images/trash_icon.svg" alt="trash icon"></li>
+            <li class="item">Escribir un libro<button class="btn eliminar">Eliminar</button></li>
+            <li class="item">Plantar un árbol<button class="btn eliminar">Eliminar</button></li>
+            <li class="item">Tener un hijo<button class="btn eliminar">Eliminar</button></li>
+            <li class="item">Aprobar el LAB<button class="btn eliminar">Eliminar</button></li>
 
 
         </ul>
