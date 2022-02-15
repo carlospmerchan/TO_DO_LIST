@@ -10,27 +10,24 @@
     <link rel="stylesheet" href="https://use.typekit.net/ulq1qcs.css">
 
 </head>
-<body>
+<body background="assets/images/paper_texture.jpg">
 
     <!-- principal -->
     <main>
         <h1>Cosas que hacer antes de morise</h1>
 
         <!-- Input de tareas -->
-        <form id="agregar" class="campo"  action="" method="POST">
-            <label class="item" for="tarea">tarea</label>
-            <input class="input_text" type="text" name="tarea" id="tarea" required maxlength="30">
+        <form id="agregar" action="" method="POST">
+            <input class="item" type="text" placeholder="Escribe tu tarea" id="subdomain"/>
             <input class="item" type="submit" value="Añadir" class="btn_primary">
         </form>
 
         <!-- Listado -->
         <ul id="tareasList" class="listado">
-            <li class="item">Escribir un libro<label><input type="checkbox" class="visar"></label><img class="delete" src="assets/images/trash_icon.svg" alt="trash icon"></li>
-            <li class="item">Plantar un árbol<label><input type="checkbox" class="visar"></label><img class="delete" src="assets/images/trash_icon.svg" alt="trash icon"></li>
-            <li class="item">Tener un hijo<label><input type="checkbox" class="visar"></label><img class="delete" src="assets/images/trash_icon.svg" alt="trash icon"></li>
-            <li class="item">Aprobar el LAB<label><input type="checkbox" class="visar"></label><img class="delete" src="assets/images/trash_icon.svg" alt="trash icon"></li>
-
-
+            <li class="item">Escribir un libro<img class="delete" src="assets/images/trash_icon.svg" alt="trash icon"></li>
+            <li class="item">Plantar un árbol<img class="delete" src="assets/images/trash_icon.svg" alt="trash icon"></li>
+            <li class="item">Tener un hijo<img class="delete" src="assets/images/trash_icon.svg" alt="trash icon"></li>
+            <li class="item">Aprobar el LAB<img class="delete" src="assets/images/trash_icon.svg" alt="trash icon"></li>
         </ul>
 
     <!-- java -->

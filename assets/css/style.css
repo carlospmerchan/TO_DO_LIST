@@ -380,8 +380,12 @@ h1 {
   padding: 0.5em;
 }
 
+h1 {
+  padding-left: 40px;
+}
+
 body {
-  background-color: blue;
+  background-color: white;
 }
 
 body #agregar {
@@ -392,7 +396,9 @@ body #agregar {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 8px;
   padding-left: 40px;
+  margin-bottom: 20px;
 }
 
 body #agregar .input_text {
