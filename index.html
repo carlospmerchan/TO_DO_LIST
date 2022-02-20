@@ -12,28 +12,80 @@
 </head>
 <body>
 
-    <!-- principal -->
-    <main>
-        <h1>Cosas que hacer antes de morise</h1>
+<!-- contenedor -->
 
+    <main>
+
+<<<<<<< HEAD
         <!-- Input de tareas -->
         <form id="agregar" class="campo"  action="" method="POST">
             <label class="item" for="tarea">tarea</label>
             <input class="input_text" type="text" name="tarea" id="tarea" required maxlength="30">
             <input class="item" type="submit" value="Añadir" class="btn_primary">
         </form>
+=======
+<!-- titulo -->
 
+        <header>
+            <div class="logo">
+                <img src="assets/images/logo.svg" alt="calavera">
+                <div class="puntos">
+                    <div class="punto"></div>
+                    <div class="punto"></div>
+                    <div class="punto"></div>
+                </div>
+            </div>
+            <h1>Cosas <br>que hacer antes de morirse</h1>
+        </header>
+>>>>>>> gomez_kitchen
+
+<!-- area de tareas -->
+       
+        <section class="sumamos">
+         <!-- Input de tareas -->
+            <form id="agregar" class="campo"  action="" method="POST">
+                <h2>>>añadir</h2>
+                <div class="formulario">
+                    <label class="etiqueta" for="tarea"></label>
+                    <input class="input_text" type="text" name="tarea" id="tarea" required maxlength="30">
+                    <div class="btn_tarea" id="btn_suma"> <img class="signo" src="assets/images/sumar.svg" alt="añadir"></div>
+                </div>  
+            </form>
         <!-- Listado -->
+<<<<<<< HEAD
         <ul id="tareasList" class="listado">
             <li class="item">Escribir un libro<label><input type="checkbox" class="visar"></label><img class="delete" src="assets/images/trash_icon.svg" alt="trash icon"></li>
             <li class="item">Plantar un árbol<label><input type="checkbox" class="visar"></label><img class="delete" src="assets/images/trash_icon.svg" alt="trash icon"></li>
             <li class="item">Tener un hijo<label><input type="checkbox" class="visar"></label><img class="delete" src="assets/images/trash_icon.svg" alt="trash icon"></li>
             <li class="item">Aprobar el LAB<label><input type="checkbox" class="visar"></label><img class="delete" src="assets/images/trash_icon.svg" alt="trash icon"></li>
+=======
+            <ul id="tareasList" class="listado"> 
+                <h2 class="bold" >pendientes</h2>
+                <li class="item">
+                    <div class="item_text">Escribir un libro</div>
+                    <button class="btn_resta"><img class="delete" src="assets/images/restar.svg" alt="eliminar"></button>
+                </li>
+                <li class="item">
+                    <div class="item_text">Plantar un árbol</div>
+                    <button class="btn_resta"><img class="delete" src="assets/images/restar.svg" alt="eliminar"></button>
+                </li>
+                <li class="item">
+                    <div class="item_text">Tener un hijo</div>
+                    <button class="btn_resta"><img class="delete" src="assets/images/restar.svg" alt="eliminar"></button>
+                </li>
+                
 
 
-        </ul>
+            </ul>
+        </section>
+>>>>>>> gomez_kitchen
 
-    <!-- java -->
+    </main>
+
+<!-- Pie -->
+<footer class="creditos">Carlos Pérez Merchán & Lorenzo Gómez. Gráfica multimedia. Programación 3GB. <br><a href="https://esdmadrid.es" target="blank" class="bold">Escuela Superior de Diseño de Madrid</a></footer>
+
+<!-- java -->
     <script src="app/main.js"></script>
 
 </body>
