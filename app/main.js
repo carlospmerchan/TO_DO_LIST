@@ -19,8 +19,11 @@ form.addEventListener("click", (e) => {
         <button class="btn_resta"><img class="delete" src="assets/images/restar.svg" alt="eliminar"></button>
     </li>`;
     porHacer.value = '';
+
+    
     
 });
+
 
 
 
