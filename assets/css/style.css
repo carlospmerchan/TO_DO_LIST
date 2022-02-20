@@ -1,3 +1,15 @@
+* {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+}
+
 *,
 *::before,
 *::after {
@@ -328,29 +340,90 @@ template {
   display: none !important;
 }
 
-* {
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  color: inherit;
-}
-
 body {
+  background-color: #1772FA;
   font-size: 16px;
-  padding: 3em;
 }
 
-h1 {
-  margin-bottom: 1em;
+@media screen and (max-width: 380px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 900px;
+  margin: 4em 3em;
+}
+
+@media screen and (max-width: 820px) {
+  main {
+    display: block;
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  main {
+    width: 300px;
+    display: block;
+    margin: 2em 1.5em;
+  }
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+}
+
+@media screen and (max-width: 820px) {
+  header {
+    margin-bottom: 2em;
+  }
+}
+
+.sumamos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 600px;
+  margin-left: 2em;
+  padding-top: 0.3em;
+}
+
+@media screen and (max-width: 820px) {
+  .sumamos {
+    margin-left: 0.5em;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .sumamos {
+    width: 300px;
+  }
 }
 
 .campo {
-  margin-bottom: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
 }
 
 .listado {
@@ -361,63 +434,36 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: pink;
+  padding: 0;
+  margin-top: 2.8em;
 }
 
-.item {
+.formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 1.6em;
+}
+
+.input_text {
   background-color: white;
-  margin: 0.5em;
-  padding: 0.5em;
+  font-size: 1.1em;
+  padding: 0.3em 0.4em;
+  color: #1772FA;
+  width: 540px;
+  height: 30px;
+  border-radius: 6px;
+  border: none;
+  margin-right: 1em;
 }
 
-.btn {
-  margin: 0.5em;
-  padding: 0.5em;
-}
-
-.visar {
-  margin: 0.5em;
-  padding: 0.5em;
-}
-
-h1 {
-  padding-left: 40px;
-}
-
-body {
-  background-color: white;
-}
-
-body #agregar {
-  background-color: pink;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 8px;
-  padding-left: 40px;
-  margin-bottom: 20px;
-}
-
-body #agregar .input_text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.listado {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+@media screen and (max-width: 380px) {
+  .input_text {
+    width: 260px;
+  }
 }
 
 .item {
@@ -427,13 +473,135 @@ body #agregar .input_text {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 1em;
+}
+
+@media screen and (max-width: 380px) {
+  .item {
+    width: 310px;
+  }
+}
+
+.item_text {
+  font-size: 1.1em;
+  color: white;
+  padding: 0.3em 0.4em;
+  margin: 0.2em 0;
+  width: 540px;
+  height: 33px;
+  border-radius: 6px;
+  border: 1px solid white;
+  margin-right: 1em;
+}
+
+@media screen and (max-width: 380px) {
+  .item_text {
+    width: 260px;
+  }
 }
 
 .delete {
-  width: 40px;
-  height: 40px;
-  background-color: pink;
-  padding: 4px;
-  border-radius: 8px;
+  height: 30px;
+}
+
+.delete:hover {
+  height: 27px;
+}
+
+button {
+  background-color: #1772FA;
+  border: none;
+}
+
+.signo {
+  height: 30px;
+}
+
+.signo:hover {
+  height: 27px;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 200px;
+  height: 150px;
+  margin-right: 1em;
+}
+
+.puntos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 0.6em;
+  width: 100%;
+}
+
+.punto {
+  background-color: white;
+  height: 8px;
+  width: 8px;
+  border-radius: 1em;
+}
+
+.creditos {
+  width: 600px;
+  font-size: 0.9em;
+  color: white;
+  margin-left: 2.5em;
+}
+
+@media screen and (max-width: 380px) {
+  .creditos {
+    width: 260px;
+  }
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url("../fonts/Rubik-Bold.woff2") format("woff2"), url("../fonts/Rubik-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url("../fonts/Rubik-Regular.woff2") format("woff2"), url("../fonts/Rubik-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1 {
+  font-family: Rubik;
+  font-weight: bold;
+  font-size: 2.25em;
+  line-height: calc(1ex / 0.48);
+  color: white;
+  padding-left: 0.5em;
+}
+
+h2 {
+  font-family: Rubik;
+  font-weight: normal;
+  font-size: 1.3em;
+  line-height: calc(1ex / 0.48);
+  color: white;
+}
+
+.bold {
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
