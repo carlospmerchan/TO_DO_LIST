@@ -1,37 +1,153 @@
 //----ESTILOS GENERALES-----
 
-*
-    // border: 1px solid red
+
+
+// *
+//     border: 1px solid red
+
+
+
+// Estructura
 
 body
+    background-color: $azul
     font-size: 16px
-    padding: 3em
+    @media screen and (max-width: $movil)
+        font-size: 14px
 
 
+main
+    display: flex
+    justify-content: flex-start
+    width: 900px
+    margin: 4em 3em
+    @media screen and (max-width: $tablet)
+        display: block
+        width: 700px
+    @media screen and (max-width: $movil)
+        width: 300px
+        display: block
+        margin: 2em 1.5em
 
-h1
-    margin-bottom: 1em
+header
+    display: flex
+    width: 300px
+    @media screen and (max-width: $tablet)
+        margin-bottom: 2em
+        
 
+.sumamos
+    display: flex
+    flex-direction: column
+    width: 600px
+    margin-left: 2em
+    padding-top: 0.3em
+    @media screen and (max-width: $tablet)
+        margin-left: 0.5em
+    @media screen and (max-width: $movil)
+        width: 300px
 
 .campo
-    margin-bottom: 1em
-
-
+    display: flex
+    flex-direction: column
+    width: 100%
+ 
 .listado
     display: flex
     flex-direction: column
-    background-color: pink
+    padding: 0
+    margin-top: 2.8em
 
-.item
-    background-color: white
-    margin: 0.5em
-    padding: 0.5em
 
-.btn
-    margin: 0.5em
-    padding: 0.5em
 
-.visar
-    margin: 0.5em
-    padding: 0.5em
+
+// Formularios
+
+.formulario
+    display: flex
+    justify-content: flex-start
+    margin-top: 1.6em
     
+.input_text
+    background-color: white
+    font-size: 1.1em
+    padding: 0.3em 0.4em
+    color: $azul
+    width: 540px
+    height: 30px
+    border-radius: 6px
+    border: none
+    margin-right: 1em
+    @media screen and (max-width: $movil)
+        width: 260px
+ 
+.item
+    display: flex
+    justify-content: space-between
+    margin-top: 1em
+    width: 
+    @media screen and (max-width: $movil)
+        width: 310px
+
+.item_text
+    font-size: 1.1em
+    color: $blanco
+    padding: 0.3em 0.4em
+    margin: 0.2em 0
+    width: 540px
+    height: 33px
+    border-radius: 6px
+    border: 1px solid $blanco
+    margin-right: 1em
+    @media screen and (max-width: $movil)
+        width: 260px
+
+.delete
+    height: 30px
+    &:hover
+        height: 27px
+
+
+button
+    background-color: $azul
+    border: none
+
+.signo
+    height: 30px
+    &:hover
+        height: 27px
+
+
+//Cabecera
+
+.logo
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    width: 200px
+    height: 150px
+    margin-right: 1em
+
+.puntos
+    display: flex
+    justify-content: space-between
+    padding: 0 0.6em 
+    width: 100%
+
+.punto
+    background-color: $blanco
+    height: 8px
+    width: 8px
+    border-radius: 1em
+
+// Pie
+
+.creditos
+    width: 600px
+    font-size: 0.9em
+    color: $blanco
+    margin-left: 2.5em
+    @media screen and (max-width: $movil)
+        width: 260px
+
+
