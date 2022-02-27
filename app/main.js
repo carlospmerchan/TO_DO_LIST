@@ -1,6 +1,7 @@
 //----JS-------
 
     // Restar tarea de ejemplo
+    let prueba = document.querySelector(".nada");
 
     let quitar_prev = document.querySelector(".delete");
 
@@ -58,6 +59,7 @@
         porHacer.value = '';
     
 
+    // Restar tareas
     // Restar tareas
 
     let quitar = document.querySelectorAll(".delete");
