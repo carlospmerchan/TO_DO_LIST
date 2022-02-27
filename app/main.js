@@ -1,25 +1,5 @@
 //----JS-------
 
-    // Restar tarea de ejemplo
-    let prueba = document.querySelector(".nada");
-
-    let quitar_prev = document.querySelector(".delete");
-
-    quitar_prev.addEventListener('click', (e) => {
-
-        borro = e.target;
-
-        let subo_uno = borro.parentNode;
-
-        let subo_dos = subo_uno.parentNode;
-
-        let subo_tres = subo_dos.parentNode;
-
-        subo_tres.removeChild(subo_dos);
-
-    });
-
-
     // Añadir tareas
 
     let form = document.querySelector("#btn_suma");
